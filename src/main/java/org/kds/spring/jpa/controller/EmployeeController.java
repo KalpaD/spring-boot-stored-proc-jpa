@@ -26,11 +26,6 @@ public class EmployeeController {
 
         List<Employees> target = new ArrayList<>();
         employees.forEach(target::add);
-       /* Employees employee = new Employees();
-        employee.setEmployeeID(1122);
-        employee.setFirstName("Jhone");
-        employee.setLastName("Snow");
-    */
         return new ResponseEntity<>(target, HttpStatus.OK);
 
     }
